@@ -1,0 +1,178 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0f4c5c;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #e8f1f2;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #102a43;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Todo Form */
+form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #0f4c5c;
+  border-radius: 5px;
+  background-color: #243b53;
+  color: #73a0a4;
+  box-sizing: border-box; 
+  width: 100%; 
+  
+}
+
+input::placeholder {
+  color: #bcccdc;
+  text-align: center; 
+   font-weight: bold;
+   
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"] {
+  background-color: #3d5a80;
+  color: #e8f1f2;
+}
+
+button[type="submit"]:hover {
+  background-color: #4a658c;
+  transform: translateY(-2px);
+}
+
+/* Error Message */
+p {
+  color: #ff6b6b;
+  font-size: 14px;
+  margin: 5px 0 0;
+  font-weight: bold;
+}
+
+/* Todo List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d3557;
+  margin-bottom: 12px;
+  padding: 12px 18px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+li input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  margin-right: 10px;
+  border: 1px solid #0f4c5c;
+  border-radius: 5px;
+  background-color: #243b53;
+  color: #e8f1f2;
+}
+
+li button {
+  font-size: 14px;
+  padding: 6px 12px;
+  margin-left: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Delete Button */
+li button:nth-child(1) {
+  background-color: #e63946;
+  color: #ffffff;
+}
+
+li button:nth-child(1):hover {
+  background-color: #d62839;
+  transform: translateY(-2px);
+}
+
+/* Edit Button */
+li button:nth-child(2) {
+  background-color: #a8dadc;
+  color: #1d3557;
+}
+
+li button:nth-child(2):hover {
+  background-color: #91c9d0;
+  transform: translateY(-2px);
+}
+
+/* Complete Button */
+li button:nth-child(3) {
+  background-color: #2a9d8f;
+  color: #ffffff;
+}
+
+li button:nth-child(3):hover {
+  background-color: #21867a;
+  transform: translateY(-2px);
+}
+
+/* Cancel Edit Button */
+li button:nth-child(4) {
+  background-color: #6c757d;
+  color: #ffffff;
+}
+
+li button:nth-child(4):hover {
+  background-color: #5a6268;
+  transform: translateY(-2px);
+}
+
+/* Completed Task Styling */
+li.completed {
+  background-color: #264653;
+  color: #b1c5c7;
+  text-decoration: line-through;
+  
+}
+
+li.completed span {
+  color: #b1c5c7;
+}
+
+li.completed button.complete-btn {
+  background-color: #4a6a7d;
+  color: #b1c5c7;
+}
+
+li.completed button.complete-btn:hover {
+  background-color: #355060;
+  transform: translateY(-2px);
+}
